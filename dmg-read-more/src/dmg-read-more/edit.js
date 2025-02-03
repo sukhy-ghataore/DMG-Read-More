@@ -102,7 +102,7 @@ export default function Edit({ attributes, setAttributes }) {
             const responsePosts = Array.isArray(responseJSON) ? responseJSON : [responseJSON];
 
             if (responsePosts) {
-                setTotalPages(response.headers.get('X-WP-TotalPages') || 0);
+                setTotalPages(response.headers.get('X-WP-TotalPages') || 1);
             }
 
             setPosts(responsePosts);
