@@ -18,7 +18,7 @@ class Dmg_Read_More {
         $date_after = $assoc_args['date-after'] ?? "";
 
         if ($date_before && $date_after) {
-            $logMessage = "between {$date_before} && {$date_after}";
+            $logMessage = "between {$date_after} && {$date_before}";
         } else {
             $date_before = date("Y-m-d");
             $date_after = date("Y-m-d", strtotime("-30 days"));
